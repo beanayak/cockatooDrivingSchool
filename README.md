@@ -1,4 +1,6 @@
-imports lib to install 
+##imports lib to install##
+##########################
+
 
 npm install nodemailer
 
@@ -20,3 +22,12 @@ npm install react-hot-toast
 npm install animate.css
 
 
+#GIT PUSH#
+######################
+
+
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/beanayak/cockatooDrivingSchool.git
+git push -u origin main
