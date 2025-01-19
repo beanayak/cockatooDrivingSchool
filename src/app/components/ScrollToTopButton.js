@@ -32,7 +32,7 @@ const ScrollToTopButton = () => {
       {isVisible && (
         <>
           {/* WhatsApp Button (Left-Aligned) */}
-          <div className="fixed bottom-4 left-4">
+  {/* <div className="fixed bottom-4 left-4">
             <a
               aria-label="Chat on WhatsApp"
               href="https://wa.me/61481372786"
@@ -48,7 +48,7 @@ const ScrollToTopButton = () => {
                 layout="intrinsic" // Automatically adjusts height based on aspect ratio
               />
             </a>
-          </div>
+          </div> */}
 
           {/* Scroll-to-Top Button (Right-Aligned) */}
           <div className="fixed bottom-4 right-4">
