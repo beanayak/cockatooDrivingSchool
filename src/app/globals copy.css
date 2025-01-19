@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* External CSS imports should be at the top */
 @import '@fortawesome/fontawesome-free/css/all.css'; /* Font Awesome */
 @import 'slick-carousel/slick/slick.css';           /* Slick Carousel */
@@ -5,9 +9,7 @@
 @import 'animate.css/animate.min.css';             /* Animate.css */
 
 /* Tailwind directives should be below the imports */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 /* Reset styles */
 * {
