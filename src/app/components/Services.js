@@ -6,7 +6,7 @@ const Services = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
         {/* Right Image Section for large devices and on top for small devices */}
         <div
-          className="relative overflow-hidden h-full min-h-[300px] animate__animated animate__fadeInUp sm:order-first lg:order-none"
+          className="relative overflow-hidden h-full min-h-[300px] animate__animated animate__fadeInUp lg:order-2 sm:order-first"
           style={{ animationDelay: '0.1s' }}
         >
           <div className="absolute inset-0 w-full h-full">
@@ -22,7 +22,7 @@ const Services = () => {
 
         {/* Left Services List Section */}
         <div
-          className="animate__animated animate__fadeInUp sm:order-last lg:order-none"
+          className="animate__animated animate__fadeInUp lg:order-1 sm:order-last"
           style={{ animationDelay: '0.5s' }}
         >
           <h6 className="text-primary uppercase mb-2">Our Services</h6>
