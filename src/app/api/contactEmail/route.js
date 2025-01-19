@@ -1,14 +1,21 @@
 import nodemailer from "nodemailer";
 
-// Create a reusable transporter object using SMTP transport
+// Create a reusable transporter object using Gmail SMTP transport
 const transporter = nodemailer.createTransport({
-  host: process.env.EMAIL_HOST,
-  port: process.env.EMAIL_PORT,
-  secure: process.env.EMAIL_SECURE === 'true', // true for 465, false for other ports
+  service: 'gmail',  // Use Gmail's SMTP service
   auth: {
     user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
+    pass: process.env.EMAIL_PASS,  // If you're using 2FA, you need to use an app-specific password here
   },
+});
+
+// Verify connection configuration
+transporter.verify((error, success) => {
+  if (error) {
+    console.error("SMTP connection error:", error);
+  } else {
+    console.log("SMTP connection successful:", success);
+  }
 });
 
 // Helper function to sanitize input
@@ -38,7 +45,7 @@ export async function POST(req) {
     // Email content
     const mailOptions = {
       from: `"${sanitizedName}" <${sanitizedEmail}>`,
-      to: process.env.ADMIN_EMAIL,
+      to: process.env.ADMIN_EMAIL, // Replace with your admin email
       subject: `ENQUIRY from ${sanitizedName} | CDSNOWRA.COM`,
       text: `
         Name: ${sanitizedName}
