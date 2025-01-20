@@ -1,7 +1,8 @@
+"use client";
+
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFlag } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image"; // Import Image from next/image
 
 export default function Contact() {
   const router = useRouter();
@@ -39,7 +40,6 @@ export default function Contact() {
     if (!formData.phone.trim()) {
       newErrors.phone = "Phone is required";
     } else {
-      // Australian phone number validation
       const ausPhoneRegex = /^(\+61|0)[2-478](\d{8})$/;
       if (!ausPhoneRegex.test(formData.phone)) {
         newErrors.phone =
@@ -90,10 +90,14 @@ export default function Contact() {
     >
       <div className="w-full max-w-2xl mt-8 sm:mt-4">
         <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+          {/* Header Section */}
           <div className="bg-primary text-white text-center p-6">
-            <h1 className="text-3xl font-bold mb-2">Contact Us</h1>
+            <div className="flex justify-center items-center mb-4">
+              <h1 className="text-3xl font-bold">Contact Us</h1>
+            </div>
             <p>Fill out the form below to get in touch with us.</p>
           </div>
+          {/* Success Message */}
           {successMessage ? (
             <div className="p-6 text-center bg-green-100 text-green-700 rounded-lg mt-6">
               <p>
@@ -112,6 +116,7 @@ export default function Contact() {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="p-6 space-y-6">
+              {/* Input Fields */}
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                 {["name", "email"].map((field) => (
                   <div key={field} className="relative">
@@ -144,11 +149,13 @@ export default function Contact() {
                     )}
                   </div>
                 ))}
-                {/* Phone Number Input with Flag */}
                 <div className="relative flex items-center">
-                  <FontAwesomeIcon
-                    icon={faFlag}
-                    className="text-blue-500 text-lg mr-2"
+                  <Image
+                    src="/aus.jpg" // Australian Flag Image
+                    alt="Australian Flag"
+                    width={32} // Adjust the size as needed
+                    height={24} // Adjust the size as needed
+                    className="mr-2"
                   />
                   <input
                     type="text"
@@ -159,7 +166,7 @@ export default function Contact() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    placeholder="e.g., +61412345678 or 0412345678"
+                    placeholder="your phone number"
                     aria-invalid={errors.phone ? "true" : "false"}
                     aria-describedby="phone-error"
                   />
@@ -170,6 +177,7 @@ export default function Contact() {
                   </p>
                 )}
               </div>
+              {/* Textarea */}
               <div className="relative">
                 <textarea
                   className={`peer form-textarea border-0 p-3 rounded-lg w-full bg-gray-50 focus:bg-white focus:ring-2 focus:ring-blue-500 ${
@@ -196,6 +204,7 @@ export default function Contact() {
                   </p>
                 )}
               </div>
+              {/* Submit Button */}
               <button
                 type="submit"
                 className="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50 transition-colors duration-300"
