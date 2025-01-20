@@ -29,7 +29,7 @@ const Services = () => {
           <h1 className="text-3xl lg:text-4xl font-bold mb-4">
             We Offer Professional Driving Lessons & Services
           </h1>
-          <p className="mb-4">
+          <p className="mb-4 text-justify">
             Our experienced instructors offer a wide range of driving lessons tailored to help you become a safe and confident driver. Whether you&apos;re a beginner or need a refresher, we&apos;ve got you covered.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4 pb-2">
