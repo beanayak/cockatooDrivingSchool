@@ -109,7 +109,7 @@ const Header = () => {
             href="#contact"
             className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-[#f3c614]"
           >
-            Contact
+            CONTACT
           </Link>
           <div className="animate-heartbeat flex justify-center mx-auto items-center w-1/4 px-4 py-2 bg-[#f3c614] rounded-md text-base font-medium text-white hover:bg-green-700">
   <a href="tel:+61481372786" className="text-md text-light hover:text-white">
