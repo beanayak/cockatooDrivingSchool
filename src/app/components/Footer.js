@@ -48,8 +48,7 @@ const Footer = () => {
                   <li><a className="text-gray-300 hover:text-primary" href="#about">About Us</a></li>
                   <li><a className="text-gray-300 hover:text-primary" href="#contact">Contact Us</a></li>
                   <li><a className="text-gray-300 hover:text-primary" href="#services">Our Services</a></li>
-                  <li><a className="text-gray-300 hover:text-primary" href="#terms">Terms & Conditions</a></li>
-                  <li><a className="text-gray-300 hover:text-primary" href="#support">Support</a></li>
+            
                 </ul>
               </motion.div>
             </div>
