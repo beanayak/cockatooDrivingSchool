@@ -35,7 +35,7 @@ const About = () => {
             <h1 className="text-3xl lg:text-4xl font-bold mb-4">
               We Help Students To Pass Test & Get A License 
             </h1>
-            <p>
+            <p className="text-justify">
               We are a driving school dedicated to helping students pass their driving tests on the first try. Our
               professional instructors and modern vehicles ensure a smooth and successful learning experience.
             </p>
