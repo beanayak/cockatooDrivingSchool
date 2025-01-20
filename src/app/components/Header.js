@@ -53,16 +53,16 @@ const Header = () => {
                 HOME
               </Link>
               <Link
-                href="#about"
-                className="inline-block text-gray-700 hover:bg-[#f3c614] py-2 px-4 rounded-md text-sm font-medium"
-              >
-                ABOUT
-              </Link>
-              <Link
                 href="#services"
                 className="inline-block text-gray-700 hover:bg-[#f3c614] py-2 px-4 rounded-md text-sm font-medium"
               >
                 SERVICES
+              </Link>
+              <Link
+                href="#about"
+                className="inline-block text-gray-700 hover:bg-[#f3c614] py-2 px-4 rounded-md text-sm font-medium"
+              >
+                ABOUT
               </Link>
               <Link
                 href="#contact"
