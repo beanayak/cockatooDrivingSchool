@@ -3,6 +3,9 @@ import './lib/fontawesome';
 import { Inter } from 'next/font/google';
 import { Toaster } from 'react-hot-toast';
 import Head from 'next/head';
+import Footer from './components/Footer';
+import Headers from './components/Header';
+import HeaderTop from './components/HeaderTop';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -50,13 +53,16 @@ export default function RootLayout({ children }) {
           })}
         </script>
       </Head>
-      <body className={inter.className}>
+     <body className={inter.className}>
+      <HeaderTop />
+        <Headers/>
         {/* Main Content */}
         <main>
           {children}
         </main>
         {/* Toast Notifications */}
         <Toaster />
+        <Footer/>
       </body>
     </html>
   );
