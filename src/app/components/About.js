@@ -39,7 +39,7 @@ const About = () => {
               We are a driving school dedicated to helping students pass their driving tests on the first try. Our
               professional instructors and modern vehicles ensure a smooth and successful learning experience.
             </p>
-            <p className="mb-4">
+            <p className="mb-4 text-justify">
               Our mission is to provide high-quality training and a supportive environment to make sure youre
               prepared and confident when it&apos;s time to take your driving test.
             </p>
