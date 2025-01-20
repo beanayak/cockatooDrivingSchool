@@ -7,7 +7,7 @@ import Head from 'next/head';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'CDS NOWRA - Driving School in Nowra & Suburbs',
+  title: 'Cockatoo Driving School - Driving School in Nowra & Suburbs',
   description: 'Learn to drive with confidence in Nowra and surrounding suburbs. Professional instructors, tailored lessons, and comprehensive courses.',
 };
 
