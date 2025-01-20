@@ -94,16 +94,16 @@ const Header = () => {
       >
         <div className="px-2 pt-2 pb-3 space-y-1">
           <Link
+            href="#services"
+            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-[#f3c614]"
+          >
+            SERVICES
+          </Link>
+          <Link
             href="#about"
             className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-[#f3c614]"
           >
-            About
-          </Link>
-          <Link
-            href="#courses"
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-[#f3c614]"
-          >
-            Courses
+            ABOUT
           </Link>
           <Link
             href="#contact"
