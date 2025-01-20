@@ -166,7 +166,7 @@ export default function Contact() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    placeholder="your phone number"
+                    placeholder="Your phone number"
                     aria-invalid={errors.phone ? "true" : "false"}
                     aria-describedby="phone-error"
                   />
