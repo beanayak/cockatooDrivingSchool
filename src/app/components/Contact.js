@@ -35,7 +35,8 @@ export default function Contact() {
     else if (!/\S+@\S+\.\S+/.test(formData.email)) newErrors.email = 'Email is invalid'
     if (!formData.message.trim()) newErrors.message = 'Message is required'
     if (!formData.phone.trim()) newErrors.phone = 'Phone is required'
-    else if (!/^\+?[1-9]\d{1,14}$|^\d{10,15}$/.test(formData.phone)) newErrors.phone = 'Phone number is invalid'
+    else if (!/^\+?[1-9]\d{0,2}[-.\s]?\(?\d{1,4}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/.test(formData.phone)) {
+  newErrors.phone = 'Phone number is invalid';
     return newErrors
   }
 
