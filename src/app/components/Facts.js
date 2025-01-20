@@ -17,7 +17,7 @@ const Facts = () => {
                 </div>
                 <div>
                   <h5 className="text-lg font-semibold mb-2">Easy Driving Learn</h5>
-                  <span className="text-gray-600 text-justify">Driving simple, safe, and stress-free with personalized lessons</span>
+                  <p className="text-gray-600 text-justify">Driving simple, safe, and stress-free with personalized lessons</p>
                 </div>
               </div>
             </div>
@@ -31,7 +31,7 @@ const Facts = () => {
                 </div>
                 <div>
                   <h5 className="text-lg font-semibold mb-2">NSW Recognized Instructor</h5>
-                  <span className="text-gray-600 text-justify">Expert trainers delivering consistent, high-quality guidance nationwide.</span>
+                  <p className="text-gray-600 text-justify">Expert trainers delivering consistent, high-quality guidance nationwide.</p>
                 </div>
               </div>
             </div>
@@ -45,7 +45,7 @@ const Facts = () => {
                 </div>
                 <div>
                   <h5 className="text-lg font-semibold mb-2">Get Licence</h5>
-                  <span className="text-gray-600 text-justify">Perfect your skills with test circuit practice, ensuring you&apos;re fully prepared for your driving exam.</span>
+                  <p className="text-gray-600 text-justify">Perfect your skills with test circuit practice, ensuring you&apos;re fully prepared for your driving exam.</p>
                 </div>
               </div>
             </div>
